@@ -1,0 +1,36 @@
+# Most of the classes in this package are fragments only referenced from XML
+
+-optimizationpasses 5
+-dontusemixedcaseclassnames
+-dontskipnonpubliclibraryclasses
+-dontpreverify
+-ignorewarnings 
+-verbose
+-optimizations !code/simplification/arithmetic,!field/*,!class/merging/*
+
+#-libraryjars libs/activation.jar
+#-libraryjars libs/additionnal.jar
+#-libraryjars libs/mail.jar
+
+
+-dontwarn android.support.**
+-dontwarn com.sun.** 
+-dontwarn javax.activation.**
+-dontwarn myjava.awt.**
+-dontwarn org.apache.harmony.**
+-dontwarn com.google.zxing.**
+-dontwarn javax.mail.**
+
+
+
+-keep public class android.support.** { *; }
+-keep public class com.sun.** { *; } 
+-keep public class javax.activation.** { *; }
+-keep public class myjava.awt.** { *; }
+-keep public class org.apache.harmony.** { *; }
+-keep public class com.google.zxing.** { *; }
+-keep public class javax.mail.** { *; }
+-keep public class android.webkit.** { *; }
+-keep public class android.hardware.display.** { *; }
+-keep class com.android.ch.browser.preferences.*
+-keep public class com.mediatek.** { *; }
